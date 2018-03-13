@@ -8,8 +8,11 @@ export default class TodoItems extends Component {
     this.createTasks = this.createTasks.bind(this);
   }
   createTasks(item) {
-    return <li onClick={() => this.delete(item.key)} 
-              key={item.key}>{item.text} </li>
+    return <li key={item.key}>
+              <input type="checkbox" className="checkCss"/>
+              {item.text}
+              <span className="deleteIcon" onClick={() => this.delete(item.key)}>x</span>
+          </li>
   };
   delete(key) {
     this.props.delete(key);

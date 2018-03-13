@@ -29,10 +29,15 @@
 } 
 .appDiv .theList li {
   color: #333;
-  border: 1px solid;
+  border: 1px solid #ccc;
   width: 50%;
   background-color: rgba(255,255,255,.5);
   padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 5px;
+  border-collapse: collapse;
+}
+.checkCss{
+     float: left;
+}
+.deleteIcon{
+  float: right;
 }
